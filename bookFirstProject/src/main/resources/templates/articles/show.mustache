@@ -1,0 +1,26 @@
+{{#msg}}
+    <div class="alert alert-primary alert-dismissible">
+        {{msg}}
+    </div>
+{{/msg}}
+
+<table>
+    <thead>
+    <tr>
+
+    </tr>
+    </thead>
+    <tbody>
+    {{#article}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{title}}</td>
+            <td>{{content}}</td>
+        </tr>
+    {{/article}}
+    </tbody>
+
+</table>
+<a href="/articles">Go to Article List</a>
+<a href="/articles/{{article.id}}/edit" class="btn btn-primary">Edit</a>
+<a href="/articles/{{article.id}}/delete" class="btn btn-danger">Delete</a>

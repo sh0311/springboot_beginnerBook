@@ -1,0 +1,9 @@
+{{#article}}
+<form action="/articles/update" method="post">
+    <input name="id" type="hidden" value="{{id}}">
+    <input type="text" class="form-control" name="title" value={{title}}>
+    <textarea class="form-control" rows="3" name="content" >{{content}}</textarea>
+    <button type="submit">Submit</button>
+    <a href="/articles/{{id}}">Back</a>
+</form>
+{{/article}}
